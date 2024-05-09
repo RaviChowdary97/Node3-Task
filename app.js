@@ -6,7 +6,9 @@ const apiRoutes = require("./routes/api");
 const app = express();
 const PORT = 3000;
 
-mongoose.connect("mongodb://127.0.0.1:27017/mentorship");
+mongoose.connect(
+  "mongodb+srv://chowdary93:Chowdary143@cluster0.karwxgg.mongodb.net/mentorship"
+);
 
 app.use(bodyParser.json());
 app.use("/api", apiRoutes);
